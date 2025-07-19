@@ -4,7 +4,7 @@ COPY package*.json ./
 RUN npm cache clean --force
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 3000
 COPY . .
 # Start the application
 CMD ["npm", "start"]
